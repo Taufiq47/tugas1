@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button</title>
+
+    <style>
+        .card {
+            border-radius: 10px;
+            background-color:aquamarine;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <p>Hai, Nama saya Taufiq!,</p>
+        <button id="button">Klik Untuk Ganti</button>
+    </div>
+
+    <script>
+        $('#button').click(function() {
+            $('.card p').html('Mantap jiwa');
+        });
+    </script>
+</body>
+</html>
